@@ -1,0 +1,37 @@
+{
+"Header": {
+        "LoginButton": "a[href='/login']",
+        "RegisterButton": "a[href='/register']",
+        "CreateButton": "a[href='/create']"
+    },
+
+"LoginPage": {
+    "EmailInput": "#email",
+    "PasswordInput": "#password",
+    "SubmitButton": "button[type='submit']"
+    },
+"Logout": {
+    "LogoutButton": ".nav-link"
+    },
+"RegisterPage": {
+    "FirstNameInput": "input[id='first-name']",
+    "LastNameInput": "input[id='last-name']",
+    "EmailInput": "#email",
+    "PasswordInput": "#password",
+    "ConfirmedPassword": "#password-confirmation",
+    "SubmitButton": "button[type='submit']",
+    "AccepTearms": "input[type='checkbox']"
+    },
+"CreateGallery": {
+    "TitleInput": "#title",
+    "DesciptionInput": "#description",
+    "ImageInput": "input[type='url']",
+    "SubmitButton": "button[type='submit']" 
+    },
+"AllGalleriesPage": {
+    "SearchInput": "input[type='text']",
+    "FilterButton": "button[type='button']"
+}
+
+
+}

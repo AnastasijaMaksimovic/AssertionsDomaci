@@ -1,5 +1,3 @@
-const { cyan } = require("colorette")
-
 describe('register case', () => {
 
     it('register with non-existing email address', () => {
