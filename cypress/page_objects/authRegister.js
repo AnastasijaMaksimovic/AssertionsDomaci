@@ -20,6 +20,13 @@ class AuthRegister {
     get sumbitButton () {
         return cy.get("button[type='submit']");
     }
+    get errorMessage() {
+        return cy.get(".alert-danger");
+    }
+
+    get registerPageHeading() {
+        return cy.get('h1');
+    }
 
     register(firstName, lastName, email, password, confirmedPassword) {
         this.firstNameInput.clear().type(firstName);

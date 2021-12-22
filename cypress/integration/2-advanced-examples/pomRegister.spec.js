@@ -1,5 +1,6 @@
-import {authRegister} from '../../page_objects/authRegister';
-import { header } from '../../page_objects/header';
+import {  authRegister  } from '../../page_objects/authRegister';
+import {  header  } from '../../page_objects/header';
+import {  validationMessages  } from '../../fixtures/validationMessages.json';
 
 const faker = require("faker");
 
@@ -27,7 +28,8 @@ describe('POM register', () => {
 
     it('register with invalid credentials', () => {
         header.registerBtn.click();
-        authRegister.register(userData.randomName, randomLastName, randomEmail, randomPassword, randomShortPassword)
+        authRegister.registerPageHeading.should('be.visible');
+        authRegister.register(userData.randomName, userData.randomLastName, userData.randomEmail, userData.randomPassword, userData.randomShortPassword)
         cy.url().should("contains", "/register");
     });
 

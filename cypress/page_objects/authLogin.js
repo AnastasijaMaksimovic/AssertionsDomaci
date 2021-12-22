@@ -12,6 +12,13 @@ class AuthLogin {
     get logoutBtn(){
         return cy.get(".nav_link").eq(3);
     }
+    get loginPageHeading() {
+        return cy.get('h1');
+    }
+
+    get errorMsg() {
+        return cy.get(".alert");
+    }
 
     login(email, password) {
         this.emailInput.clear().type(email);
