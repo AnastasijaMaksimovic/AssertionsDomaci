@@ -1,9 +1,9 @@
 class AuthRegister {
     get firstNameInput () {
-        return cy.get("a[href='/register']");
+        return cy.get("input[id='first-name']");
     }
     get lastNameInput () {
-        return cy.get("input[id='first-name']");
+        return cy.get("input[id='last-name']");
     }
     get emailAddressInput () {
         return cy.get("#email");
@@ -29,11 +29,13 @@ class AuthRegister {
     }
 
     register(firstName, lastName, email, password, confirmedPassword) {
-        this.firstNameInput.clear().type(firstName);
-        this.lastNameInput.clear().type(lastName);
-        this.emailAddressInput.clear().type(email);
-        this.passwordInput.clear().type(password);
-        this.passwordConfirmationInput.clear().type(confirmedPassword);
+        this.firstNameInput.type(firstName);
+        this.lastNameInput.type(lastName);
+        this.emailAddressInput.type(email);
+        this.passwordInput.type(password);
+        this.passwordConfirmationInput.type(confirmedPassword);
+        this.acceptTermsCheckbox.click();
+        this.sumbitButton.click();
     }
 }
 

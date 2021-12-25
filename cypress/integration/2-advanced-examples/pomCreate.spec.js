@@ -62,4 +62,4 @@ describe('POM create', () => {
         authCreate.errorMsg.should('not.exist');
         cy.url().should('not.contains', '/create');
     });
-})
+});

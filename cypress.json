@@ -1,3 +1,7 @@
 {
-    "baseUrl" : "https://gallery-app.vivifyideas.com"
+    "baseUrl" : "https://gallery-app.vivifyideas.com",
+    "env": {
+        "validUserMail": "anastasija.maksimovic21@gmail.com",
+        "validUserPass": "anjaitoni111"
+    }
 }
